@@ -1,13 +1,87 @@
 {
 	"compiler": {
-		"version": "0.8.19+commit.7dd6d404"
+		"version": "0.8.24+commit.e11b9ed9"
 	},
 	"language": "Solidity",
 	"output": {
 		"abi": [
 			{
+				"inputs": [
+					{
+						"internalType": "string",
+						"name": "_name",
+						"type": "string"
+					},
+					{
+						"internalType": "uint256",
+						"name": "_favoriteNumber",
+						"type": "uint256"
+					}
+				],
+				"name": "addPerson",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"name": "listOfpeople",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "favoriteNumber",
+						"type": "uint256"
+					},
+					{
+						"internalType": "string",
+						"name": "name",
+						"type": "string"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
 				"inputs": [],
-				"name": "favoriteNumber",
+				"name": "myFavoriteNumber",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "string",
+						"name": "",
+						"type": "string"
+					}
+				],
+				"name": "nameToFavoriteNumber",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "retrieve",
 				"outputs": [
 					{
 						"internalType": "uint256",
@@ -47,7 +121,7 @@
 		"compilationTarget": {
 			"SimpleStorage.sol": "SimpleStorage"
 		},
-		"evmVersion": "paris",
+		"evmVersion": "shanghai",
 		"libraries": {},
 		"metadata": {
 			"bytecodeHash": "ipfs"
@@ -60,11 +134,11 @@
 	},
 	"sources": {
 		"SimpleStorage.sol": {
-			"keccak256": "0x788bfcf9d1a93f5535e72cfc87ad08d56a0ccfb87baa5caaa21bfda5b89e8321",
+			"keccak256": "0xed3d4ecd54a7b6b11229fafce14bc7487be407990023071fe69b32ae98a68456",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://e4712950458129186c6651ff3b313e33c0393820db119344255423db21908488",
-				"dweb:/ipfs/QmSUEc6DaLoM3CUnB2NC6UFREnQSEPT6CnDhrQAQmasNQr"
+				"bzz-raw://a8840ca672ab2ddf639bc1e562b0d3b2276c1b0d70fd7793f1bd6f1622df09da",
+				"dweb:/ipfs/QmW5kKLc6UztsKwJsS6bWX5YQUSh1g56fbtBNF6AWBZmvB"
 			]
 		}
 	},
