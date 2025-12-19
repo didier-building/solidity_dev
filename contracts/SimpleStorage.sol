@@ -9,7 +9,7 @@ contract SimpleStorage {
     //address myAdrss = 0x6ad85F24c4aC2989556cA62440b616CB4cdA42a2;
     //bytes32 favoritesByte32 = "cat";
     uint256 public myFavoriteNumber;
-    // uint256[] listOfFavoriteNumbers; //0
+    // uint256[] listOfFavoriteNumbers; 
 
     struct Person{
         uint256 favoriteNumber;
